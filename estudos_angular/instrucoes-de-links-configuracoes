@@ -55,6 +55,55 @@
 ## Instalações:
         ng add @angular/material
 
+## Comandos para criações de componentes e outras coisas do angular
+
+        _Instalação de bibliotecas
+		ng add ngx-bootstrap
+		npm i ngx-bootstrap-fix-datepicker --force
+		npm i ngx-bootstrap-fix-datepicker
+
+        _GitLab - comandos
+		git checkout -b feature/criacao-tela-pesquisa
+		git checkout -b feature/criacao-tela-cadastro-perfil		
+		git checkout -b feature/<nome-da-funcionalidade>
+		
+		git push --set-upstream origin feature/criacao-tela-pesquisa  >>> para criação de feature novas
+		
+		#> passando os ultimos componentes criado na branch anterior para a branch derivada <#
+				
+		# entra na branch nova e da esse comando pra pushar as alterações feitas na branch antiga
+		git merge feature/criacao-tela-pesquisa 
+		
+		
+        _usuarios
+		ng generate module ppt-pesquisa --routing
+		ng generate c ppt-pesquisa/pesquisa
+		ng generate c ppt-pesquisa/pesquisa-detalhes
+
+                ng generate c ppt-usuarios/usuarioCadastro/usuarioCadastro
+                ng generate c ppt-usuarios/usuarioListagem/usuarioListagem
+
+                # niveis-hierarquicos niveisHierarquicos
+                ng generate module ppt-niveisHierarquicos --routing
+                ng generate c ppt-niveis-hierarquicos/niveisHierarquicosCadastro/niveisHierarquicosCadastro
+                ng generate c ppt-niveis-hierarquicos/niveisHierarquicosListagem/niveisHierarquicosListagem
+
+                # niveis-acesso niveisAcesso
+                ng generate module ppt-niveisAcesso --routing
+                ng generate c ppt-niveis-acesso/niveisAcessoCadastro/niveisAcessoCadastro
+                ng generate c ppt-niveis-acesso/niveisAcessoListagem/niveisAcessoListagem
+
+                # localidades
+                ng generate module ppt-localidades --routing
+                ng generate c ppt-localidades/localidadesCadastro/localidadesCadastro
+                ng generate c ppt-localidades/localidadesListagem/localidadesListagem
+
+                # canais
+                ng generate module ppt-canais --routing
+                ng generate c ppt-canais/canaisCadastro/canaisCadastro
+                ng generate c ppt-canais/canaisListagem/canaisListagem
+
+
 ##### ***********************************************************************
 ##### ***********************************************************************
 ##### ***********************************************************************
@@ -93,6 +142,15 @@
                 ngOnChanges(){} -> executado também uma vez na criação do componente e toda vez que ele sofrer alguma mudança;
                                                 sempre que um componente recebe um dados através de @Input() o ngOnChanges() é invocado
                         EXEMPLO:
+                                interface: _ SimpleChange e suas propriedades - paramOpcional _
+                                        interface SimpleChanges{
+                                                [ proName: string ]: SimpleChanges; -> esse SimpleChanges é como se fosse um parametro opcional
+                                                currentValue: any;
+                                                previousValue: any;
+                                                firstChange: boolean;
+                                                isFirstChange(): boolean;
+                                        }
+                                ------
                                 import { Component, OnChanges, Input } from '@angular/core';
 
                                 @Component({...})

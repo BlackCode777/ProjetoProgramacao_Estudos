@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+/* Modifiquei a tela de fundo da minha aplicação no arquivo principal " style.css " */
+
+body{
+        /* background-color: rgb(123, 136, 250); */
+        background-image: linear-gradient(#000000, #a650f7);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

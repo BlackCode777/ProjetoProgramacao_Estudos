@@ -1,3 +1,4 @@
+## Curso de estudo --> https://www.udemy.com/course/curso-de-angular/learn/lecture/25569022#overview
 ## Documentação angular --> https://angular.io/docs
 ## Site referência de angulaar --> https://vidafullstack.com.br/
 ## para desabilitar o compartilhamento com google --> ng analytics disable
@@ -5,32 +6,32 @@
 ## Comandos dentro do ng generate
                 Generates and/or modifies files based on a schematic.
                 Commands:
-                ng generate <schematic>              Run the provided schematic.  [default]  
-                ng generate app-shell                Generates an application shell for running a server-side version of an app.
-                ng generate application [name]       Generates a new basic application definition in the "projects" subfolder of the workspace. [aliases: app]  
-                ng generate class [name]             Creates a new, generic class definition in the given project. [aliases: cl]  
-                ng generate component [name]         Creates a new, generic component definition in the given project. [aliases: c]  
-                ng generate config [type]            Generates a configuration file in the given project.
-                ng generate directive [name]         Creates a new, generic directive definition in the given project. [aliases: d]  
-                ng generate enum [name]              Generates a new, generic enum definition in the given project. [aliases: e]  
-                ng generate environments             Generates and configures environment files for a project.
-                ng generate guard [name]             Generates a new, generic route guard definition in the given project. [aliases: g]  
-                ng generate interceptor [name]       Creates a new, generic interceptor definition in the given project.
+                ng generate <schematic> Run the provided schematic.  [default]  
+                ng generate app-shell Generates an application shell for running a server-side version of an app.
+ng generate application [name] Generates a new basic application definition in the "projects" subfolder of the workspace. [aliases: app]  
+                ng generate class [name] Creates a new, generic class definition in the given project. [aliases: cl]  
+                ng generate component [name] Creates a new, generic component definition in the given project. [aliases: c]  
+                ng generate config [type] Generates a configuration file in the given project.
+                ng generate directive [name] Creates a new, generic directive definition in the given project. [aliases: d]  
+                ng generate enum [name] Generates a new, generic enum definition in the given project. [aliases: e]  
+                ng generate environments - Generates and configures environment files for a project.
+                ng generate guard [name] Generates a new, generic route guard definition in the given project. [aliases: g]  
+                ng generate interceptor [name] Creates a new, generic interceptor definition in the given project.
                 ng generate interface [name] [type]  Creates a new, generic interface definition in the given project.  [aliases: i]  
-                ng generate library [name]           Creates a new, generic library project in the current workspace. [aliases: lib]  
-                ng generate module [name]            Creates a new, generic NgModule definition in the given project. [aliases: m]  
-                ng generate pipe [name]              Creates a new, generic pipe definition in the given project. [aliases: p]  
-                ng generate resolver [name]          Generates a new, generic resolver definition in the given project. [aliases: r]  
-                ng generate service [name]           Creates a new, generic service definition in the given project. [aliases: s]  
-                ng generate service-worker           Pass this schematic to the "run" command to create a service worker
-                ng generate web-worker [name]        Creates a new, generic web worker definition in the given project.
+                ng generate library [name] Creates a new, generic library project in the current workspace. [aliases: lib]  
+                ng generate module [name] Creates a new, generic NgModule definition in the given project. [aliases: m]  
+                ng generate pipe [name] Creates a new, generic pipe definition in the given project. [aliases: p]  
+                ng generate resolver [name] Generates a new, generic resolver definition in the given project. [aliases: r]  
+                ng generate service [name] Creates a new, generic service definition in the given project. [aliases: s]  
+                ng generate service-worker  Pass this schematic to the "run" command to create a service worker
+                ng generate web-worker [name] Creates a new, generic web worker definition in the given project.
 
                 Arguments:
                 schematic  The [collection:schematic] to run. [string]
                 Options:
-                --help         Shows a help message for this command in the console.  [boolean]  --interactive  Enable interactive input prompts. [boolean] [default: true] 
-                --dry-run      Run through and reports activity without writing out results. [boolean] [default: false]  
-                --defaults     Disable interactive input prompts for options with a default.
+                --help Shows a help message for this command in the console.  [boolean]  --interactive  Enable interactive input prompts. [boolean] [default: true] 
+                --dry-run  Run through and reports activity without writing out results. [boolean] [default: false]  
+                --defaults Disable interactive input prompts for options with a default.
 ## Comandos Angular
                 Commands:
                 ng add <collection> - Adds support for an external library to your project.
@@ -52,12 +53,11 @@
                 ng update [packages..] - Updates your workspace and its dependencies. See https://update.angular.io/.
                 ng version - Outputs Angular CLI version.    [aliases: v]
 
-## Instalações:
-        ng add @angular/material
-
+## Instalações:      
 ## Comandos para criações de componentes e outras coisas do angular
 
         _Instalação de bibliotecas
+                ng add @angular/material
 		ng add ngx-bootstrap
 		npm i ngx-bootstrap-fix-datepicker --force
 		npm i ngx-bootstrap-fix-datepicker
@@ -107,6 +107,8 @@
 ##### ***********************************************************************
 ##### ***********************************************************************
 ##### ***********************************************************************
+
+### Link de referência MapMental - https://gitmind.com/app/docs/mu488lnc
 
 ### Introdução ao ngOnInit()
         Eventos dentro de um componente:
@@ -166,7 +168,13 @@
                                 }
         
         **************************************************************************************
-                ngDoCheck(){}
+                ngDoCheck(){} -> executado a cada mudança que o ngOnChange não detecta; 
+                                                - DoCheck é um gancho de ciclo de vida usado para invocar uma função de detecção de alterações personalizada para uma diretiva.
+                                                O Angular dispara o gancho DoCheck após cada detecção de alteração.
+                                                - DoCheck é usada para capturar quaisquer alterações dentro do componente angular que não podem ser capturadas de outra maneira, então basicamente esta função “ngDoCheck()” será executada toda vez que houver algum tipo de alteração no Componente Angular.
+                                                Ele será executado quando um valor de variável for alterado para que coisas básicas também possam ser capturadas desta função.
+                                                Portanto, neste método, estamos lidando com todos os tipos de coisas com instruções if-else.
+                                                OBS :  ngDoCheck e ngOnChanges não devem ser implementados juntos no mesmo componente.
         
         
         **************************************************************************************

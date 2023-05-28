@@ -7,6 +7,8 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 })
 export class TitleComponent  implements OnInit, OnChanges{
 
+      
+
         @Input() public title: string = "Meu Nome é Anderson"
 
         constructor(){}

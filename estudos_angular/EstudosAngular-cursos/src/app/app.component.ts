@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
         
+        public destruir: boolean = true
+
         constructor(){}
+        
+        
+        public DestruirComponente(){
+                this.destruir = false;
+        }
+
         ngOnInit(): void {}
+
+
 }

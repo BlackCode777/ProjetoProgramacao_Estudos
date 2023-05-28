@@ -1,2 +1,3 @@
-<app-title title="Adeus Javascript"></app-title>
+<app-title title="Adeus Javascript" *ngIf="destruir"></app-title>
+<button (click)="DestruirComponente()" >DestruirComponente</button>
 <router-outlet></router-outlet>

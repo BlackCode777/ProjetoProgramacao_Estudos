@@ -9,8 +9,7 @@ export class AppComponent implements OnInit{
         
         public destruir: boolean = true
 
-        constructor(){}
-        
+        constructor(){}        
         
         public DestruirComponente(){
                 this.destruir = false;

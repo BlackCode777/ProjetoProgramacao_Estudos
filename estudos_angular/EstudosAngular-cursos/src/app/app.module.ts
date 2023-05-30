@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TitleComponent } from './title/title.component';
 import { DataBindingInterpolationComponent } from './data-binding-interpolation/data-binding-interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { EventBindingTestComponent } from './event-binding-test/event-binding-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
     DataBindingInterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EventBindingTestComponent
   ],
   imports: [
     BrowserModule,

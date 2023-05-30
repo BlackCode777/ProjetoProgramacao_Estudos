@@ -7,21 +7,15 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 })
 export class AppComponent implements OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked{
         
-<<<<<<< HEAD
-        public destruir: boolean = true
-
-        constructor(){}        
-        
-        public DestruirComponente(){
-                this.destruir = false;
-        }
-
-        ngOnInit(): void {}
-
-=======
         public valor: number = 1;
 
+        public destruir = true
+
         constructor(){}
+
+        public DestruirComponente(){
+                this.destruir = false
+        }
 
         public adicionar(): number{
                 return this.valor += 1;
@@ -43,6 +37,5 @@ export class AppComponent implements OnInit, DoCheck, AfterContentInit, AfterCon
         ngAfterViewInit(): void {
                 console.log("ngAfterViewInit")
         }
->>>>>>> feature/entendendo-ngDoCheck
 
 }

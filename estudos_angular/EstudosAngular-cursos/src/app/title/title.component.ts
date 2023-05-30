@@ -8,6 +8,8 @@ import { AppComponent } from '../app.component';
 })
 export class TitleComponent  implements OnInit, OnChanges, OnDestroy{
 
+      
+
         @Input() public title: string = "Meu Nome é Anderson"
 
         constructor(

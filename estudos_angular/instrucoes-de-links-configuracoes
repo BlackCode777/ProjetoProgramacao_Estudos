@@ -105,6 +105,33 @@ ng generate application [name] Generates a new basic application definition in t
 ### Introdução ao ngOnInit()
         Eventos dentro de um componente:
 
+
+
+        **************************************************************************************
+        Event-Binding
+                HTML: ------------------------------------------------------------------
+                        <button (click)="alertaInfo()" ><button>
+                TS:----------------------------------------------------------------------
+                        public alertaInfo(valor: string){
+                                alert("Pegando eventos com event-binding")
+                        }
+
+                        public alertaInfo(valor: MouseEvent){
+                                console.log(valor)
+                        }
+
+                OBS:-------------- para estudo profundo do angular ----------------
+                        https://developer.mozilla.org/docs/Web/API/Window
+                        
+                        interface WindowEventMap extends GlobalEventHandlersEventMap, WindowEventHandlersEventMap {
+                                "DOMContentLoaded": Event;
+                                "devicemotion": DeviceMotionEvent;
+                                "deviceorientation": DeviceOrientationEvent;
+                                "gamepadconnected": GamepadEvent;
+                                "gamepaddisconnected": GamepadEvent;
+                                "orientationchange": Event;
+                        }
+
         **************************************************************************************
                 ngOnInit(){} -> É um evento, usado pra iniciar pela primeira vez os dados em um componente
                         EXEMPLO: 

@@ -65,7 +65,9 @@ ng generate application [name] Generates a new basic application definition in t
 		git checkout -b feature/criacao-tela-pesquisa
 		git checkout -b feature/criacao-tela-cadastro-perfil		
 		git checkout -b feature/<nome-da-funcionalidade>		
-		git push --set-upstream origin feature/criacao-tela-pesquisa  >>> para criação de feature novas		
+		git push --set-upstream origin feature/criacao-tela-pesquisa  >>> para criação de feature 
+                novas		
+                git branch --set-upstream-to=origin/main feature/estudo-Two-Way-Binding
 		# passando os ultimos componentes criado na branch anterior para a branch derivada <#				
 		# entra na branch nova e da esse comando pra pushar as alterações feitas na branch antiga
 		git merge feature/criacao-tela-pesquisa 
@@ -75,6 +77,7 @@ ng generate application [name] Generates a new basic application definition in t
 		ng generate module ppt-pesquisa --routing
 		ng generate c ppt-pesquisa/pesquisa
 		ng generate c ppt-pesquisa/pesquisa-detalhes
+                ng generate c estudoTwoWayBinding
                 # usuarios
                 ng generate c ppt-usuarios/usuarioCadastro/usuarioCadastro
                 ng generate c ppt-usuarios/usuarioListagem/usuarioListagem

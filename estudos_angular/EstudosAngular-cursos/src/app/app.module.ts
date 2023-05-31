@@ -8,21 +8,23 @@ import { TitleComponent } from './title/title.component';
 import { DataBindingInterpolationComponent } from './data-binding-interpolation/data-binding-interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EstudoTwoWayBindingComponent } from './estudo-two-way-binding/estudo-two-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TitleComponent,
-    DataBindingInterpolationComponent,
-    PropertyBindingComponent,
-    EstudoTwoWayBindingComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+        declarations: [
+                AppComponent,
+                TitleComponent,
+                DataBindingInterpolationComponent,
+                PropertyBindingComponent,
+                EstudoTwoWayBindingComponent
+        ],
+        imports: [
+                FormsModule,
+                BrowserModule,
+                AppRoutingModule,
+                BrowserAnimationsModule
+        ],
+        providers: [],
+        bootstrap: [AppComponent]
 })
 export class AppModule { }

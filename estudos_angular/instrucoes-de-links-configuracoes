@@ -68,6 +68,7 @@ ng generate application [name] Generates a new basic application definition in t
 		git push --set-upstream origin feature/criacao-tela-pesquisa  >>> para criação de feature 
                 novas		
                 git branch --set-upstream-to=origin/main feature/estudo-Two-Way-Binding
+                git pull origin main
 		# passando os ultimos componentes criado na branch anterior para a branch derivada <#				
 		# entra na branch nova e da esse comando pra pushar as alterações feitas na branch antiga
 		git merge feature/criacao-tela-pesquisa 

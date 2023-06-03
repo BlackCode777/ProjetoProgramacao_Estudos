@@ -57,11 +57,14 @@ ng generate application [name] Generates a new basic application definition in t
 ## Comandos para criações de componentes e outras coisas do angular
 
         _Instalação de bibliotecas
+                npm install bootstrap@5.3.0
+                npm i bootstrap-icons
                 ng add @angular/material
 		ng add ngx-bootstrap
 		npm i ngx-bootstrap-fix-datepicker --force
 		npm i ngx-bootstrap-fix-datepicker
         _GitLab - comandos
+                git checkout -b feature/estudo-ngClass-CSS
 		git checkout -b feature/criacao-tela-pesquisa
 		git checkout -b feature/criacao-tela-cadastro-perfil		
 		git checkout -b feature/<nome-da-funcionalidade>		
@@ -77,6 +80,7 @@ ng generate application [name] Generates a new basic application definition in t
                 # pesquisa
 		ng generate module ppt-pesquisa --routing
 		ng generate c ppt-pesquisa/pesquisa
+                ng generate c estudo-ngClass-css
 		ng generate c ppt-pesquisa/pesquisa-detalhes
                 ng generate c estudoTwoWayBinding
                 # usuarios

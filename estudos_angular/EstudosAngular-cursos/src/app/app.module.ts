@@ -10,6 +10,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EstudoTwoWayBindingComponent } from './estudo-two-way-binding/estudo-two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { EstudoNgClassCssComponent } from './estudo-ng-class-css/estudo-ng-class-css.component';
+import { EstudoDiretivaNgForArraysComponent } from './estudo-diretiva-ng-for-arrays/estudo-diretiva-ng-for-arrays.component';
 
 @NgModule({
         declarations: [
@@ -18,7 +19,8 @@ import { EstudoNgClassCssComponent } from './estudo-ng-class-css/estudo-ng-class
                 DataBindingInterpolationComponent,
                 PropertyBindingComponent,
                 EstudoTwoWayBindingComponent,
-                EstudoNgClassCssComponent
+                EstudoNgClassCssComponent,
+                EstudoDiretivaNgForArraysComponent
         ],
         imports: [
                 FormsModule,

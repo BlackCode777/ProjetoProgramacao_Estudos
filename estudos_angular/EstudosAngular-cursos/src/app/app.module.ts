@@ -9,6 +9,8 @@ import { DataBindingInterpolationComponent } from './data-binding-interpolation/
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EstudoTwoWayBindingComponent } from './estudo-two-way-binding/estudo-two-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { EstudoDiretivasEstruturaisNgifNgelseNgforNgswitchComponent } from './estudo-diretivas-estruturais-ngif-ngelse-ngfor-ngswitch/estudo-diretivas-estruturais-ngif-ngelse-ngfor-ngswitch.component';
+import { ConverteHoraParaDecimalComponent } from './converte-hora-para-decimal/converte-hora-para-decimal.component';
 
 @NgModule({
         declarations: [
@@ -16,7 +18,9 @@ import { FormsModule } from '@angular/forms';
                 TitleComponent,
                 DataBindingInterpolationComponent,
                 PropertyBindingComponent,
-                EstudoTwoWayBindingComponent
+                EstudoTwoWayBindingComponent,
+                EstudoDiretivasEstruturaisNgifNgelseNgforNgswitchComponent,
+                ConverteHoraParaDecimalComponent
         ],
         imports: [
                 FormsModule,

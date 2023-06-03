@@ -65,6 +65,10 @@ ng generate application [name] Generates a new basic application definition in t
 		npm i ngx-bootstrap-fix-datepicker
         _GitLab - comandos
 
+                >> https://medium.com/@anjusha.khandavalli/auto-setup-remote-branch-with-push-autosetupremote-892ddd7644 <<
+                'push.autoSetupRemote'
+                git config --global --add --bool push.autoSetupRemote true
+
                 git git checkout -b feature/estudo-diretiva-ngFor-ARRAYS
                 git merge feature/event-binding-23
                 git checkout -b feature/estudo-ngClass-CSS

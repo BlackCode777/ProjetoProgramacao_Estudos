@@ -16,7 +16,6 @@ export class AppComponent implements OnInit, DoCheck, AfterContentInit, AfterCon
         public DestruirComponente(){
                 this.destruir = false
         }
-
         public adicionar(): number{
                 return this.valor += 1;
         }

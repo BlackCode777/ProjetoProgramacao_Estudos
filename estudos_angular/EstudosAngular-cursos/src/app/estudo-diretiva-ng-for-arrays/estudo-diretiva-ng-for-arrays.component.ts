@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class EstudoDiretivaNgForArraysComponent {
 
+        public sintaxeHTML: string = ' {{ <li *ngFor="let item of list" >  Nome :  {{ item.nome }} / Idade :  {{ item.idade }}  </li> }} '
+
+        public sintaxeTS: string = `
+                                public list: Array<{ nome: string, idade: number }> = [
+                                        { nome: "Anderson Martins", idade: 21 },
+                                        { nome: "Carlos Clodoaldo", idade: 33 },
+                                        { nome: "Josy Martins", idade: 44 }
+                                ];        
+        `
+
+        public list: Array<{ nome: string, idade: number }> = [
+                { nome: "Anderson Martins", idade: 21 },
+                { nome: "Carlos Clodoaldo", idade: 33 },
+                { nome: "Josy Martins", idade: 44 }
+        ];
+
 }

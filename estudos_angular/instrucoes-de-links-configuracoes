@@ -64,6 +64,8 @@ ng generate application [name] Generates a new basic application definition in t
 		npm i ngx-bootstrap-fix-datepicker --force
 		npm i ngx-bootstrap-fix-datepicker
         _GitLab - comandos
+
+                git merge feature/event-binding-23
                 git checkout -b feature/estudo-ngClass-CSS
 		git checkout -b feature/criacao-tela-pesquisa
 		git checkout -b feature/criacao-tela-cadastro-perfil		

@@ -77,6 +77,7 @@ ng generate application [name] Generates a new basic application definition in t
 		git merge feature/criacao-tela-pesquisa 
 
         _criação de componentes
+                ng generate c estudoDiretivasEstruturaisNgifNgelseNgforNgswitch
                 # pesquisa
 		ng generate module ppt-pesquisa --routing
 		ng generate c ppt-pesquisa/pesquisa

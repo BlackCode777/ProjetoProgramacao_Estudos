@@ -26,6 +26,7 @@ import { EstudoNgClassCssComponent } from './estudo-ng-class-css/estudo-ng-class
                 AppRoutingModule,
                 BrowserAnimationsModule
         ],
+        exports:[FormsModule], /* Sempre que for criar  ou utilizar um módulo( ou módulo de outros componentes ) diferente do angular preciso exportar pra ele ficar visivel pra outras partes do app */
         providers: [],
         bootstrap: [AppComponent]
 })

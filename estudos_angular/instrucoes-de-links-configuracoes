@@ -208,3 +208,12 @@ ng generate application [name] Generates a new basic application definition in t
 
 
 
+error: open("estudos_angular/EstudosAngular-cursos/src/app/estudo-diretivas-estruturais-ngif-ngelse-ngfor-ngswitch/estudo-diretivas-estruturais-ngif-ngelse-ngfor-ngswitch.component.css"): Filename too long
+error: unable to index file 'estudos_angular/EstudosAngular-cursos/src/app/estudo-diretivas-estruturais-ngif-ngelse-ngfor-ngswitch/estudo-diretivas-estruturais-ngif-ngelse-ngfor-ngswitch.component.css'
+fatal: adding files failed
+
+[info] > git config --get commit.template [75ms]
+
+[info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [72ms]
+
+[info] > git status -z -uall [69ms]

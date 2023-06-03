@@ -9,6 +9,7 @@ import { DataBindingInterpolationComponent } from './data-binding-interpolation/
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EstudoTwoWayBindingComponent } from './estudo-two-way-binding/estudo-two-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { EstudoNgClassCssComponent } from './estudo-ng-class-css/estudo-ng-class-css.component';
 
 @NgModule({
         declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
                 TitleComponent,
                 DataBindingInterpolationComponent,
                 PropertyBindingComponent,
-                EstudoTwoWayBindingComponent
+                EstudoTwoWayBindingComponent,
+                EstudoNgClassCssComponent
         ],
         imports: [
                 FormsModule,

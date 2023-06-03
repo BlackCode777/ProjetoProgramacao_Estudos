@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './estudo-diretiva-ng-for-arrays.component.html',
   styleUrls: ['./estudo-diretiva-ng-for-arrays.component.css']
 })
+
 export class EstudoDiretivaNgForArraysComponent {
 
         public sintaxeHTML: string = ' {{ <li *ngFor="let item of list" >  Nome :  {{ item.nome }} / Idade :  {{ item.idade }}  </li> }} '

@@ -83,7 +83,35 @@ ng generate application [name] Generates a new basic application definition in t
 		# entra na branch nova e da esse comando pra pushar as alterações feitas na branch antiga
 		git merge feature/criacao-tela-pesquisa 
 
+        _Testes Unitários com ESLint e Jasmine
+
+"../node_modules/jquery/dist/jquery.js",
+"../node_modules/theter/dist/tether.js",
+"../node_modules/bootstrap/dist/bootstrap.js"
+
+                ng add @angular-eslint/schematics
+                ng lint // Escaneia o código, verificar boas práticas do style guide, pequenos erros como ponto e vírgula, entre outros.
+                // Jasmine é uma biblioteca de testes BDD - Testes Orientado a Comportamento - https://jasmine.github.io/
+                ng test // executar os testes Jasmine
+
+                // Karma é uma ferramenta de testes que permite executar cada linha de código do teste em diferentes browser. Permitindo emular e verificar a compatibilidade cross-browser da aplicação. - https://github.com/karma-runner/karma/
+
+                ng e2e // executar os testes end-two-end(e2e) - Testes de Integração
+
+
         _criação de componentes
+
+                # Tipos de arquivos - opcional passar o path de onde o projeto é gerado.
+                component ▶ ng g c <nome-component>
+                service ▶ ng g s <nome-service>
+                directive ▶ ng g d <nome-directive>
+                pipe ▶  ng g p <nome-pipe>
+                class ▶ ng g class <nome-class>
+                interface ▶ ng g i <nome-interface>
+                enum ▶ ng g e <nome-enum>
+                module ▶ ng g m <nome-module>
+                guard ▶ ng g g <nome-guard>
+
                 ng generate c estudoDiretivasEstruturaisNgifNgelseNgforNgswitch
                 # pesquisa
 		ng generate module ppt-pesquisa --routing

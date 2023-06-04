@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { NgSwitch } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-estudo-diretiva-ng-for-arrays',
-  templateUrl: './estudo-diretiva-ng-for-arrays.component.html',
-  styleUrls: ['./estudo-diretiva-ng-for-arrays.component.css']
+        selector: 'app-estudo-diretiva-ng-for-arrays',
+        templateUrl: './estudo-diretiva-ng-for-arrays.component.html',
+        styleUrls: ['./estudo-diretiva-ng-for-arrays.component.css']
 })
 
 export class EstudoDiretivaNgForArraysComponent {
@@ -22,13 +23,43 @@ export class EstudoDiretivaNgForArraysComponent {
                 { nome: "Josy Martins", idade: 44 }
         ];
 
-        public onClickEventList(event: MouseEvent){
-                console.log(event) 
+        /* NgSwitch testes de condicional */
+        @Input()
+        public nomeSwitch: string = "";
+
+        constructor() { }
+        ngOnInit() {
+               this.funcSwitchCase()
         }
-        
+
+        public funcSwitchCase(){   
+                let nome = this.nomeSwitch             
+                if(nome){
+                        switch (nome) {
+                                case 'anderson':
+                                        return 'Anderson';
+                                case 'josy':
+                                        return 'Josy'
+                                case 'carlos':
+                                        return 'Carlos'
+                                case 'henrique':
+                                        return 'Henrique'
+                                case 'clodoaldo':
+                                        return 'Clodoaldo'
+                                default:
+                                        'Indefinido'
+                        }
+                }
+                return nome
+        }
+
+        public onClickEventList(event: MouseEvent) {
+                console.log(event)
+        }
+
         /* Criando uma função para adicionar itens na lista */
-        public onClickListADD(){
-                this.list.push( { nome: "Andrade", idade: 43 } )
+        public onClickListADD() {
+                this.list.push({ nome: "Andrade", idade: 43 })
         }
 
 }

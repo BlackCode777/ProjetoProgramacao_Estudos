@@ -1,11 +1,28 @@
+<hr>
+<div>
+        <h3 style="color: aliceblue;">Estudo da Diretiva NgSwitch para tratamento de Arrays e condicionais</h3>
+        <!-- Case de uso NGSWITCH -->
+        <input [(ngModel)]="nomeSwitch">
+        <h3>{{ funcSwitchCase() }}</h3>
+        <!-- <div  *ngFor="let nome of nomeSwitch" > 
+                <div [ngSwitch]="nomeSwitch">
+                        <p *ngSwitchDefault="'generico'">genérico</p>
+                        <p *ngSwitchCase="'anderson'" >Anderson</p>
+                        <p *ngSwitchCase="'andré'">André</p>
+                        <p *ngSwitchCase="'josy'">Josy</p>
+                        <p *ngSwitchCase="'clodoaldo'">Clodoaldo</p>                         
+                </div> -->
+        <!-- </div> -->
+        
+</div>
+
+<hr>
 <div>
         <h3>Estudo da Diretiva NgFor para tratamento de Arrays</h3>
 
         <div>
                 <ul>
-                        <li *ngFor="let item of list; let i = index;" (click)="onClickEventList($event)">
-                                [ {{i}} ] - Nome : {{ item.nome }} / Idade : {{ item.idade }}
-                        </li>
+                        <li *ngFor="let item of list; let i = index;" (click)="onClickEventList($event)">[ {{i}} ] - Nome : {{ item.nome }} / Idade : {{ item.idade }}</li>
                 </ul>
         </div>
 
@@ -19,58 +36,5 @@
 
 </div>
 
-<!--
-        PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
-isTrusted: true
-altKey: false
-altitudeAngle: 1.5707963267948966
-azimuthAngle: 0
-bubbles: true
-button: 0
-buttons: 0
-cancelBubble: false
-cancelable: true
-clientX: 165
-clientY: 72
-composed: true
-ctrlKey: false
-currentTarget: null
-defaultPrevented: false
-detail: 1
-eventPhase: 0
-fromElement: null
-height: 1
-isPrimary: false
-layerX: 165
-layerY: 72
-metaKey: false
-movementX: 0
-movementY: 0
-offsetX: 133
-offsetY: 8
-pageX: 165
-pageY: 72
-pointerId: 1
-pointerType: "mouse"
-pressure: 0
-relatedTarget: null
-returnValue: true
-screenX: -1201
-screenY: 478
-shiftKey: false
-sourceCapabilities: InputDeviceCapabilities {firesTouchEvents: false}
-srcElement: li
-tangentialPressure: 0
-target: li
-tiltX: 0
-tiltY: 0
-timeStamp: 86861.20000001788
-toElement: null
-twist: 0
-type: "click"
-view: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
-which: 1
-width: 1
-x: 165
-y: 72
--->
+
+

@@ -1,13 +1,76 @@
 <div>
         <h3>Estudo da Diretiva NgFor para tratamento de Arrays</h3>
-        
-        <ul>
-                <li *ngFor="let item of list" >
-                        Nome :  {{ item.nome }} / Idade :  {{ item.idade }}
-                </li>
-        </ul>
 
+        <div>
+                <ul>
+                        <li *ngFor="let item of list; let i = index;" (click)="onClickEventList($event)">
+                                [ {{i}} ] - Nome : {{ item.nome }} / Idade : {{ item.idade }}
+                        </li>
+                </ul>
+        </div>
+
+        <div>
+                <button (click)="onClickListADD()" style="border-radius: 15px; width: 10em;">AddItemList</button>
+        </div>
+
+        <br>
         <h5>sintaxeHTML: <span>{{ sintaxeHTML }}</span> </h5>
         <h5>sintaxeTS: <span>{{ sintaxeTS }}</span> </h5>
 
 </div>
+
+<!--
+        PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
+isTrusted: true
+altKey: false
+altitudeAngle: 1.5707963267948966
+azimuthAngle: 0
+bubbles: true
+button: 0
+buttons: 0
+cancelBubble: false
+cancelable: true
+clientX: 165
+clientY: 72
+composed: true
+ctrlKey: false
+currentTarget: null
+defaultPrevented: false
+detail: 1
+eventPhase: 0
+fromElement: null
+height: 1
+isPrimary: false
+layerX: 165
+layerY: 72
+metaKey: false
+movementX: 0
+movementY: 0
+offsetX: 133
+offsetY: 8
+pageX: 165
+pageY: 72
+pointerId: 1
+pointerType: "mouse"
+pressure: 0
+relatedTarget: null
+returnValue: true
+screenX: -1201
+screenY: 478
+shiftKey: false
+sourceCapabilities: InputDeviceCapabilities {firesTouchEvents: false}
+srcElement: li
+tangentialPressure: 0
+target: li
+tiltX: 0
+tiltY: 0
+timeStamp: 86861.20000001788
+toElement: null
+twist: 0
+type: "click"
+view: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+which: 1
+width: 1
+x: 165
+y: 72
+-->

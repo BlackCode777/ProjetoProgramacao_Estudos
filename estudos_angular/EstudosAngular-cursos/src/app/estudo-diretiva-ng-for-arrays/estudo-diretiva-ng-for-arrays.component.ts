@@ -24,8 +24,7 @@ export class EstudoDiretivaNgForArraysComponent {
         ];
 
         /* NgSwitch testes de condicional */
-        @Input()
-        public nomeSwitch: string = "";
+        @Input() public nomeSwitch: string = "";
 
         constructor() { }
         ngOnInit() {

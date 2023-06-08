@@ -72,6 +72,9 @@ ng generate application [name] Generates a new basic application definition in t
                 git git checkout -b feature/estudo-diretiva-ngFor-ARRAYS
                 git merge feature/event-binding-23
                 git checkout -b feature/estudo-ngClass-CSS
+
+                git checkout -b feature/estudo-ngModel
+
                 git checkout -b feature/estudo-ngClass-ngStyle
 		git checkout -b feature/criacao-tela-pesquisa
 		git checkout -b feature/criacao-tela-cadastro-perfil		
@@ -120,6 +123,7 @@ ng generate application [name] Generates a new basic application definition in t
                 ng generate c estudo-ngClass-css
 		ng generate c ppt-pesquisa/pesquisa-detalhes
                 ng generate c estudoTwoWayBinding
+                ng generate c estudoNgModel
                 # usuarios
                 ng generate c ppt-usuarios/usuarioCadastro/usuarioCadastro
                 ng generate c ppt-usuarios/usuarioListagem/usuarioListagem

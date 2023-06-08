@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { EstudoNgClassCssComponent } from './estudo-ng-class-css/estudo-ng-class-css.component';
 import { EstudoDiretivaNgForArraysComponent } from './estudo-diretiva-ng-for-arrays/estudo-diretiva-ng-for-arrays.component';
 import { EstudoNgClassNgStyleComponent } from './estudo-ng-class-ng-style/estudo-ng-class-ng-style.component';
+import { EstudoNgModelComponent } from './estudo-ng-model/estudo-ng-model.component';
 
 @NgModule({
         declarations: [
@@ -22,7 +23,8 @@ import { EstudoNgClassNgStyleComponent } from './estudo-ng-class-ng-style/estudo
                 EstudoTwoWayBindingComponent,
                 EstudoNgClassCssComponent,
                 EstudoDiretivaNgForArraysComponent,
-                EstudoNgClassNgStyleComponent
+                EstudoNgClassNgStyleComponent,
+                EstudoNgModelComponent
         ],
         imports: [
                 FormsModule,

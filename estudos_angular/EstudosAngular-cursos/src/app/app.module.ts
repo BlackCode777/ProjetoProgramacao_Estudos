@@ -11,6 +11,7 @@ import { EstudoTwoWayBindingComponent } from './estudo-two-way-binding/estudo-tw
 import { FormsModule } from '@angular/forms';
 import { EstudoNgClassCssComponent } from './estudo-ng-class-css/estudo-ng-class-css.component';
 import { EstudoDiretivaNgForArraysComponent } from './estudo-diretiva-ng-for-arrays/estudo-diretiva-ng-for-arrays.component';
+import { EstudoNgClassNgStyleComponent } from './estudo-ng-class-ng-style/estudo-ng-class-ng-style.component';
 
 @NgModule({
         declarations: [
@@ -20,7 +21,8 @@ import { EstudoDiretivaNgForArraysComponent } from './estudo-diretiva-ng-for-arr
                 PropertyBindingComponent,
                 EstudoTwoWayBindingComponent,
                 EstudoNgClassCssComponent,
-                EstudoDiretivaNgForArraysComponent
+                EstudoDiretivaNgForArraysComponent,
+                EstudoNgClassNgStyleComponent
         ],
         imports: [
                 FormsModule,

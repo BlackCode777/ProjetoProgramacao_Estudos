@@ -72,6 +72,7 @@ ng generate application [name] Generates a new basic application definition in t
                 git git checkout -b feature/estudo-diretiva-ngFor-ARRAYS
                 git merge feature/event-binding-23
                 git checkout -b feature/estudo-ngClass-CSS
+                git checkout -b feature/estudo-ngClass-ngStyle
 		git checkout -b feature/criacao-tela-pesquisa
 		git checkout -b feature/criacao-tela-cadastro-perfil		
 		git checkout -b feature/<nome-da-funcionalidade>		
@@ -85,9 +86,9 @@ ng generate application [name] Generates a new basic application definition in t
 
         _Testes Unitários com ESLint e Jasmine
 
-"../node_modules/jquery/dist/jquery.js",
-"../node_modules/theter/dist/tether.js",
-"../node_modules/bootstrap/dist/bootstrap.js"
+                "../node_modules/jquery/dist/jquery.js",
+                "../node_modules/theter/dist/tether.js",
+                "../node_modules/bootstrap/dist/bootstrap.js"
 
                 ng add @angular-eslint/schematics
                 ng lint // Escaneia o código, verificar boas práticas do style guide, pequenos erros como ponto e vírgula, entre outros.

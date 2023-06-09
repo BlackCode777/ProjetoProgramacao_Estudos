@@ -14,6 +14,7 @@ import { EstudoDiretivaNgForArraysComponent } from './estudo-diretiva-ng-for-arr
 import { EstudoNgClassNgStyleComponent } from './estudo-ng-class-ng-style/estudo-ng-class-ng-style.component';
 import { SharedModule } from './shared/shared.module';
 
+
 @NgModule({
         declarations: [
                 AppComponent,

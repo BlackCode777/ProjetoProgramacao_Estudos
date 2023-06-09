@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { EstudoNgClassCssComponent } from './estudo-ng-class-css/estudo-ng-class-css.component';
 import { EstudoDiretivaNgForArraysComponent } from './estudo-diretiva-ng-for-arrays/estudo-diretiva-ng-for-arrays.component';
 import { EstudoNgClassNgStyleComponent } from './estudo-ng-class-ng-style/estudo-ng-class-ng-style.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
         declarations: [
@@ -28,7 +29,8 @@ import { EstudoNgClassNgStyleComponent } from './estudo-ng-class-ng-style/estudo
                 FormsModule,
                 BrowserModule,
                 AppRoutingModule,
-                BrowserAnimationsModule
+                BrowserAnimationsModule,
+                SharedModule
         ],
         exports:[FormsModule], /* Sempre que for criar  ou utilizar um módulo( ou módulo de outros componentes ) diferente do angular preciso exportar pra ele ficar visivel pra outras partes do app */
         providers: [],

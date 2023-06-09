@@ -1,4 +1,4 @@
-<h3>Estudo-NgModel - manipulando ngModel</h3>
+<!-- <h3>Estudo-NgModel - manipulando ngModel</h3> -->
 
 <!-- <div *ngIf=" nome != 'Desligar' ">
         <div>
@@ -11,25 +11,19 @@
                         'font-size': fontS } ">NgStyle
                 </p>
         </div>
-</div> -->
-
-
-
-<div>
-        <li *ngFor="let item of listNgTemplate">{{ item.nome }}</li>
-        <!--No ng-template o for é usado desta forma-->
-        <ng-template ngFor let-item [ngForOf]="listNgTemplate">
-                <p>{{ item.nome }}</p>
-        </ng-template>
-
-        <div>
-                <!-- <input [(ngModel)]="nome"> -->
-                <button (click)="salvar()">Savar</button>
-        </div>
-        {{nome}}
-        
 </div>
 
-<hr>
-<hr>
-<hr>
+<div>
+        <div>
+                <input [(ngModel)]="nome">
+                <button (click)="salvar()">Savar</button>
+        </div>
+
+     {{nome}} 
+
+        <li *ngFor="let item of listNome">{{ item.nome }}</li>
+</div>
+
+<hr><hr><hr>
+
+-->

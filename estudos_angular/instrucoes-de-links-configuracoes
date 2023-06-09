@@ -71,6 +71,9 @@ ng generate application [name] Generates a new basic application definition in t
 
                 git git checkout -b feature/estudo-diretiva-ngFor-ARRAYS
                 git merge feature/event-binding-23
+
+                git merge feature/Aula_36_criando_sub_modulos
+
                 git checkout -b feature/estudo-ngClass-CSS
 
                 git checkout -b feature/estudo-ngModel

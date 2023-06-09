@@ -13,6 +13,7 @@ import { EstudoNgClassCssComponent } from './estudo-ng-class-css/estudo-ng-class
 import { EstudoDiretivaNgForArraysComponent } from './estudo-diretiva-ng-for-arrays/estudo-diretiva-ng-for-arrays.component';
 import { EstudoNgClassNgStyleComponent } from './estudo-ng-class-ng-style/estudo-ng-class-ng-style.component';
 import { SharedModule } from './shared/shared.module';
+import { EstudoNgModelComponent } from './estudo-ng-model/estudo-ng-model.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SharedModule } from './shared/shared.module';
                 EstudoTwoWayBindingComponent,
                 EstudoNgClassCssComponent,
                 EstudoDiretivaNgForArraysComponent,
-                EstudoNgClassNgStyleComponent
+                EstudoNgClassNgStyleComponent,
+                EstudoNgModelComponent
         ],
         imports: [
                 FormsModule,

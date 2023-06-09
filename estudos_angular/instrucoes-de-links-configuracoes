@@ -79,6 +79,8 @@ ng generate application [name] Generates a new basic application definition in t
 
                 git checkout -b feature/estudo-ngModel
 
+                git checkout -b feature/estudo-Transferencia-de-dados-entre-componentes
+
                 git checkout -b feature/estudo-ngClass-ngStyle
 		git checkout -b feature/criacao-tela-pesquisa
 		git checkout -b feature/criacao-tela-cadastro-perfil		
@@ -124,6 +126,10 @@ ng generate application [name] Generates a new basic application definition in t
                 # pesquisa
 		ng generate module ppt-pesquisa --routing
                 ng generate module shared 
+
+                ng generate module transferenciaDeDadosEntreComponentes
+                ng generate c transferencia-de-dados-entre-componentes/transferenciaEntreComp
+
 		ng generate c ppt-pesquisa/pesquisa
                 ng generate c estudo-ngClass-css
 		ng generate c ppt-pesquisa/pesquisa-detalhes

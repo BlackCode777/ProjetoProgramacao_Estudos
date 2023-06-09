@@ -14,6 +14,7 @@ import { EstudoDiretivaNgForArraysComponent } from './estudo-diretiva-ng-for-arr
 import { EstudoNgClassNgStyleComponent } from './estudo-ng-class-ng-style/estudo-ng-class-ng-style.component';
 import { SharedModule } from './shared/shared.module';
 import { EstudoNgModelComponent } from './estudo-ng-model/estudo-ng-model.component';
+import { TransferenciaDeDadosEntreComponentesModule } from './transferencia-de-dados-entre-componentes/transferencia-de-dados-entre-componentes.module';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { EstudoNgModelComponent } from './estudo-ng-model/estudo-ng-model.compon
                 BrowserModule,
                 AppRoutingModule,
                 BrowserAnimationsModule,
+                TransferenciaDeDadosEntreComponentesModule,
                 SharedModule
         ],
         exports:[FormsModule], /* Sempre que for criar  ou utilizar um módulo( ou módulo de outros componentes ) diferente do angular preciso exportar pra ele ficar visivel pra outras partes do app */

@@ -18,7 +18,8 @@ import { NovoComponentSevenComponent } from './novo-component-seven/novo-compone
                 NovoComponentSixComponent,
                 NovoComponentSevenComponent
         ],
-        exports: [NovoComponentOneComponent,
+        exports: [
+                NovoComponentOneComponent,
                 NovoComponentTwoComponent,
                 NovoComponentTreeComponent,
                 NovoComponentFourComponent,

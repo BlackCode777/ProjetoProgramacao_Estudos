@@ -18,20 +18,13 @@
 
         ### GitHub - Versionamento  ----> 
                 git checkout -b feature/v-1.0_trabalhando-to-list-componentes
+                
                 [ to-do ] - V_1.0  << nomeclatura para versionamento do GitHub    
 
+                ** Para uma branch nova
                 git branch --set-upstream-to=origin/v-1.0_trabalhando-to-list-componentes feature/v-1.0_trabalhando-to-list-componentes  
-
-                hint: If you are planning on basing your work on an upstream
-                hint: branch that already exists at the remote, you may need to
-                
-                run "git fetch" to retrieve it.                
-                
-                hint: If you are planning to push out a new local branch that
-                hint: will track its remote counterpart, you may want to use
-
-                "git push -u" to set the upstream config as you push.
-                hint: Disable this message with "git config advice.setUpstreamFailure false"
+                run "git fetch" to retrieve it.     
+                run "git push -u" to set the upstream config as you push.
 
 ## Referências de código das aulas
                 ✅  ​Github das aulas Iniciais:

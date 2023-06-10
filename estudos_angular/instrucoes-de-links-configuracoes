@@ -3,6 +3,22 @@
 ## Site referência de angulaar --> https://vidafullstack.com.br/
 ## para desabilitar o compartilhamento com google --> ng analytics disable
 
+## App To-Do List        
+        ### Pasta de Referencias
+                https://github.com/troquatte/curso-angular-to-do-list/tree/main/src
+                
+        ### Criação do App
+                ng g m /modules
+                ng g m /modules/home
+                ng g c /modules/home/components/header
+                ng g c /modules/home/components/todoButtonDeleteAll
+                ng g c /modules/home/components/todoInputAddItens
+                ng g c /modules/home/components/todoList
+                ng g c /modules/home/pages/home
+
+        ### GitHub - Versionamento
+                [ to-do ] - V_1.0  << nomeclatura para versionamento do GitHub        
+
 ## Referências de código das aulas
                 ✅  ​Github das aulas Iniciais:
                 https://github.com/troquatte/curso-angular​

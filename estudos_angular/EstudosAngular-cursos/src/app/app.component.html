@@ -1,9 +1,7 @@
 <ng-template [ngIf]="getDados">
         <h4>{{getDados.nome}} - {{ getDados.idade }}</h4>
 </ng-template>
-
 <app-transferencia-dado-filho-para-pai (enviarDados)="setDados($event)"></app-transferencia-dado-filho-para-pai>
-
 <app-novo-component-one></app-novo-component-one>
 <hr>
 <app-transferencia-entre-comp [contador]="addValue"></app-transferencia-entre-comp>

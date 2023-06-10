@@ -3,12 +3,51 @@
 ## Site referência de angulaar --> https://vidafullstack.com.br/
 ## para desabilitar o compartilhamento com google --> ng analytics disable
 
+## Referências de código das aulas
+                ✅  ​Github das aulas Iniciais:
+                https://github.com/troquatte/curso-angular​
+                ✅  ​Github das aulas Rotas:
+                https://github.com/troquatte/curso-angular-router
+                ✅  Github das aulas ​Reactive Forms:
+                https://github.com/troquatte/curso-angular-reactiv…
+                ✅  Github das aulas ​Router:
+                https://github.com/troquatte/curso-angular-router
+                ✅  Github das aulas​ Testes Unitários:
+                https://github.com/troquatte/curso-angular-testes-…
+                ​✅  Github das aulas​ de JAVASCRIPT 
+                https://github.com/troquatte/curso-javascript
+                ​✅  Github das aulas​ de TYPESCRIPT
+                https://github.com/troquatte/curso-typescript
+                
+                *****************************************************
+                ✅ Projetos​: To-do List
+                Figma: https://www.figma.com/file/ZX3XOso5AovkNOQVqoEQum/…
+                Código: https://github.com/troquatte/curso-angular-to-do-list
+                GhPages: https://troquatte.github.io/curso-angular-to-do-list
+
+                ✅ Projetos​: ​Pokedex
+                Figma: https://www.figma.com/file/AZ6mvD0UbYSqVBVoSIptu1/Pokedesk?node-id=0:1​
+                Código: https://github.com/troquatte/curso-angular-pokedex​
+                GhPages: https://troquatte.github.io/curso-angular-pokedex/
+                Css Animation: https://www.theappguruz.com/tag-tools/web/CSSAnimations/
+
+                ✅ Projetos​: AuthFront Login com Angular + Nodejs JWT
+                Figma: https://www.figma.com/file/6ipzAJ8a7ZS0xv4MsVHS1S/AuthFront?node-id=0:1​​
+                Github Angular AuthFront: https://github.com/troquatte/curso-de-angular-auth-front
+                Github Nodejs Faker Jwt: https://github.com/troquatte/curso-de-angular-fake-jwt
+                NPM: https://www.npmjs.com/package/@auth0/angular-jwt
+
+                ✅ Projetos​: Dark Theme
+                Figma: https://www.figma.com/file/prMqkEeRn1eGLXXVRPEgPy/…​
+                Github: https://github.com/troquatte/curso-angular-dark-th…​
+                Github Pages: https://troquatte.github.io/curso-angular-dark-the…
+
 ## Comandos dentro do ng generate
                 Generates and/or modifies files based on a schematic.
                 Commands:
                 ng generate <schematic> Run the provided schematic.  [default]  
                 ng generate app-shell Generates an application shell for running a server-side version of an app.
-ng generate application [name] Generates a new basic application definition in the "projects" subfolder of the workspace. [aliases: app]  
+                ng generate application [name] Generates a new basic application definition in the "projects" subfolder of the workspace. [aliases: app]  
                 ng generate class [name] Creates a new, generic class definition in the given project. [aliases: cl]  
                 ng generate component [name] Creates a new, generic component definition in the given project. [aliases: c]  
                 ng generate config [type] Generates a configuration file in the given project.

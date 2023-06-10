@@ -7,11 +7,21 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 })
 export class AppComponent implements OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked{
         
-        public valor: number = 1;
+        public addValue: number = 0;
 
+        public valor: number = 1;
         public destruir = true
 
         constructor(){}
+
+        public getDados: {nome: string, idade: number} | undefined;
+        public setDados(event: {nome: string, idade: number} ){
+                this.getDados = event;
+        }
+
+        public add(){
+                this.addValue += 1;
+        }
 
         public DestruirComponente(){
                 this.destruir = false

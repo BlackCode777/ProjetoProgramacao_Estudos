@@ -7,6 +7,8 @@ import { NovoComponentFourComponent } from './novo-component-four/novo-component
 import { NovoComponentFiveComponent } from './novo-component-five/novo-component-five.component';
 import { NovoComponentSixComponent } from './novo-component-six/novo-component-six.component';
 import { NovoComponentSevenComponent } from './novo-component-seven/novo-component-seven.component';
+import { TransferenciaEntreCompComponent } from '../transferencia-de-dados-entre-componentes/transferencia-entre-comp/transferencia-entre-comp.component';
+import { TransferenciaDadoFilhoParaPaiComponent } from '../transferencia-de-dados-entre-componentes/transferencia-dado-filho-para-pai/transferencia-dado-filho-para-pai.component';
 
 @NgModule({
         declarations: [
@@ -16,7 +18,9 @@ import { NovoComponentSevenComponent } from './novo-component-seven/novo-compone
                 NovoComponentFourComponent,
                 NovoComponentFiveComponent,
                 NovoComponentSixComponent,
-                NovoComponentSevenComponent
+                NovoComponentSevenComponent,
+                TransferenciaEntreCompComponent,
+                TransferenciaDadoFilhoParaPaiComponent
         ],
         exports: [
                 NovoComponentOneComponent,
@@ -25,7 +29,10 @@ import { NovoComponentSevenComponent } from './novo-component-seven/novo-compone
                 NovoComponentFourComponent,
                 NovoComponentFiveComponent,
                 NovoComponentSixComponent,
-                NovoComponentSevenComponent],
+                NovoComponentSevenComponent,
+                TransferenciaEntreCompComponent,
+                TransferenciaDadoFilhoParaPaiComponent
+        ],
         imports: [
                 CommonModule
         ]

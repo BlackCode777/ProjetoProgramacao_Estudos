@@ -26,7 +26,8 @@ import { SharedModule } from './shared/shared.module';
                 EstudoNgClassCssComponent,
                 EstudoDiretivaNgForArraysComponent,
                 EstudoNgClassNgStyleComponent,
-                EstudoNgModelComponent
+                EstudoNgModelComponent,
+                
         ],
         imports: [
                 FormsModule,

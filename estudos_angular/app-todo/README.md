@@ -67,6 +67,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
                 - (http://apptasklist.blackcode777.com/)
 
-## INSTALAÇÕES
-        $ npm install -g angular-cli-ghpages
-        $ angular-cli-ghpages --dir=dist/app-todo
+## INSTALAÇÕES 
+        $ ng add angular-cli-ghpages

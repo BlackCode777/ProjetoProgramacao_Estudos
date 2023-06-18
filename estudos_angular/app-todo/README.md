@@ -63,8 +63,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
                 - https://colorlib.com/
                 - https://html5up.net/
                 - https://startbootstrap.com/
-        *** Configuração de DNS apos o uso do comando ng buil
-                - https:www.BlackCode777_AppTaskList.com
+        *** Configuração de DNS apos o uso do comando ng build
 
+                - (http://apptasklist.blackcode777.com/)
 
-
+## INSTALAÇÕES
+        $ npm install -g angular-cli-ghpages
+        $ angular-cli-ghpages --dir=dist/app-todo

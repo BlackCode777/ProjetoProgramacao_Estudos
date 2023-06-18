@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 
 // Interface
 import { TaskList } from '../../model/task-list';
@@ -8,18 +8,41 @@ import { TaskList } from '../../model/task-list';
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.scss']
 })
-export class TodoListComponent {
+export class TodoListComponent implements DoCheck {
 
         public taskList: Array<TaskList> = [];
-        constructor(){}
-        ngOnInit():void{}        
-        
+        constructor(){} 
+
+        /*Created function for delet task and ask if delet task*/
+        validationInput(event: string, index: number){
+                if(!event.length){
+                        const confirmation = window.confirm('task esta vazia vc deseji continuar?');
+                        if(confirmation) {
+                                this.deleteItem(index)
+                        }
+                }    
+        }
+
+        /* Trocando a posição das tasks marcadas para última posição */
+        ngDoCheck(): void {
+                this.taskList.sort((primeiro, ultimo) => Number(primeiro.checked) - Number(ultimo.checked))
+        }
+
+        /* Function for pass task not checked for up position and task marked checked for down position */
+        public markListCheckedForUpPosition(){
+                this.taskList.forEach((task, index) => {
+                        if(index > 0){
+                                task.checked = true; 
+                        }
+                })
+        }
+
         /* Capturando eventos emitidos e adicionando eventos na lista tipados */
         public setEmitTaskList(event: string){                
                 this.taskList.push({task: event, checked: false});
-                console.log(event);
+                //console.log(event);
         }
-        
+
         public deleteItem(index: number): void{
                 this.taskList.splice(index, 1);
         }

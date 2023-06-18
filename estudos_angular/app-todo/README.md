@@ -40,7 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
                                 this.addItemTaskListVar = "";
                         }
                 }
-                
+
         PAI: todo-list/componene HTML:
                 <app-todo-input-add-itens (emitItemTaskList)="setEmitTaskList($event)"></app-todo-input-add-itens>
         PAI: todo-list/componene TS:
@@ -57,6 +57,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
         *** Components
 
         *** Guards of the routers
+
+        *** Sites com templates gratis livres para criar meus componentes
+                - https://freehtml5.co/
+                - https://colorlib.com/
+                - https://html5up.net/
+                - https://startbootstrap.com/
 
 
 

@@ -27,15 +27,12 @@ section {
                                 &[type="checkbox"] {
                                         width: 5%;
                                 }
-
                                 &[type="text"] {
                                         width: 80%;
                                         padding: 5px 10px;
                                         border: none;
-
                                         font-size: 16px;
                                         color: $primary-text-color;
-
                                         &.checked {
                                                 text-decoration: line-through;
                                         }

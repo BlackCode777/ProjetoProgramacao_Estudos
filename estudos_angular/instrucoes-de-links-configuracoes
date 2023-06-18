@@ -131,7 +131,7 @@ _GitLab - comandos
         'push.autoSetupRemote'
         git config --global --add --bool push.autoSetupRemote true
 
-        git git checkout -b feature/estudo-diretiva-ngFor-ARRAYS
+        git checkout -b feature/estudo-diretiva-ngFor-ARRAYS
         git git checkout -b feature/Aula_36_criando_sub-modulos
         git merge feature/event-binding-23
         git merge feature/Aula_36_criando_sub_modulos

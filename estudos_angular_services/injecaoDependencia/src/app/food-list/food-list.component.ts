@@ -16,4 +16,6 @@ export class FoodListComponent {
     this.list = this.foodListServService.getList(); 
   }
 
+
+
 }

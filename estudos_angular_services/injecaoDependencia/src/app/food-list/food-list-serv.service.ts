@@ -18,6 +18,12 @@ export class FoodListServService {
 
   constructor() { }
 
+  // create method for add new food
+  public addFood(food: string){
+    return this.list.push(food);
+  }
+
+
   // create method for return list of foods
   public getList(){
     return this.list;

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FoodListServService } from './food-list-serv.service';
 
 @Component({
   selector: 'app-food-list',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./food-list.component.scss']
 })
 export class FoodListComponent {
+
+  // create variable for receive list of foods
+  public list: Array<string> = [];//this.foodListServService.getList();
+
+  constructor(private foodListServService: FoodListServService) { }
+  ngOnInit() {
+    this.list = this.foodListServService.getList(); 
+  }
 
 }

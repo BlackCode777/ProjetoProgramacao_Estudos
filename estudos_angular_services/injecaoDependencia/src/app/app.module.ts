@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FoodListComponent } from './food-list/food-list.component';
 import { FoodAddComponent } from './shared/food-add/food-add.component';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FoodAddComponent } from './shared/food-add/food-add.component';
   ],
   exports: [FoodAddComponent, FoodListComponent],
   imports: [
+    // HttpClient, // <========== Add this line!
     BrowserModule,
     AppRoutingModule
   ],

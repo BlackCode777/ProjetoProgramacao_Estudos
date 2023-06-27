@@ -9,7 +9,7 @@ import { FoodListServService } from './food-list-serv.service';
 export class FoodListComponent {
 
   // create variable for receive list of foods
-  public list: Array<string> = [];//this.foodListServService.getList();
+  public list: Array<any> = [];//this.foodListServService.getList();
 
   constructor(private foodListServService: FoodListServService) { }
   ngOnInit() {

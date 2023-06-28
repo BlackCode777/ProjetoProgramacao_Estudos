@@ -7,10 +7,13 @@ ng new PetScanFinder
 - https://github.com/serratus/quaggaJS
 
 - https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
-- 
+- https://github.com/allansli/angular-barcode-febraban - repositório
+- https://github.com/allansli/angular-barcode-febraban#readme
 
 # Instalação
 - npm install bootstrap
 - npm install quagga
 - npm i angular-font-awesome
 - npm i jquery
+- npm i angular-barcode-febraban
+- npm install angular-barcode-febraban --save

@@ -10,6 +10,9 @@ ng new PetScanFinder
 - https://github.com/allansli/angular-barcode-febraban - repositório
 - https://github.com/allansli/angular-barcode-febraban#readme
 
+# Libs para leitura de códigos de barras
+- https://www.npmjs.com/search?q=keywords%3Aboleto&page=1&perPage=20
+
 # Instalação
 - npm install bootstrap
 - npm install quagga

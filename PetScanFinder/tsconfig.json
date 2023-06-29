@@ -22,12 +22,36 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "strictTypeChecks": true,
+    "strictNullChecks": true,
+    "strictBooleanChecks": true,
+    "strictNumericChecks": true,
+    "strictObjectChecks": true,
+    "strictArrayChecks": true,
+    "strictFunctionChecks": true,
+    "strictStringChecks": true,
+    "strictBooleanLiteralChecks": true,
+    "strictNumericLiteralChecks": true,
+    "strictObjectLiteralChecks": true,
+    "strictArrayLiteralChecks": true,
+    "strictFunctionLiteralChecks": true,
+    "strictStringLiteralChecks": true,
+    "strictBooleanLiteralTypeChecks": true,
+    "strictNumericLiteralTypeChecks": true,
+    "strictObjectLiteralTypeChecks": true,
+    "strictArrayLiteralTypeChecks": true,
+    "strictFunctionLiteralTypeChecks": true,
+    "strictStringLiteralTypeChecks": true,
+    
   }
 }

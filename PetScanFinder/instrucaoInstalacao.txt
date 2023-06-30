@@ -14,7 +14,9 @@ ng new PetScanFinder
 - https://www.npmjs.com/search?q=keywords%3Aboleto&page=1&perPage=20
 
 # Instalação
-- npm i primeng
+- npm install primeicons primeng --save
+- npm install primeng@15.0.1 --save
+- npm install primeflex --save
 ref. https://stackoverflow.com/questions/55021263/buffer-is-not-defined-error-after-migrating-to-angular-7
 - npm install buffer
 - npm install --save @ericblade/quagga2 ngx-barcode-scanner
@@ -26,3 +28,23 @@ ref. https://stackoverflow.com/questions/55021263/buffer-is-not-defined-error-af
 - npm i jquery
 - npm i angular-barcode-febraban
 - npm install angular-barcode-febraban --save
+
+
+**************************************************************************************************************
+libs Usadas no proj.Relacionamento
+-----------------------------------
+"chart.js": "^2.9.3",
+"hammerjs": "^2.0.8",
+"jquery": "^3.4.1",
+"material-design-icons": "^3.0.1",
+"moment": "^2.24.0",
+"ng4-click-outside": "^1.0.1",
+"ngrx-store-freeze": "^0.2.4",
+"ngx-custom-validators": "^8.0.0",
+"primeicons": "^2.0.0",
+"primeng": "^8.1.1",
+"quill": "^1.3.7",
+"rxjs": "~6.4.0",
+"tslib": "^1.10.0",
+"xlsx": "^0.18.2",
+"zone.js": "~0.9.1"

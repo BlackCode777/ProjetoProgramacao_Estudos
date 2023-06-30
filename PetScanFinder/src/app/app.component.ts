@@ -3,7 +3,7 @@ import { BarcodeScannerLivestreamComponent } from 'ngx-barcode-scanner';
 
 @Component({
   selector: 'app-root',
-  templateUrl:'app.component.html',  
+  templateUrl:'app.component.html',
   styleUrls: ['app.component.scss']
 })
 

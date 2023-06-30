@@ -7,21 +7,25 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { BarcodeScannerLivestreamModule } from 'ngx-barcode-scanner';
+import { ConsoleBotoesExtracaoRelatoriosComponent } from './console-botoes-extracao-relatorios/console-botoes-extracao-relatorios.component';
 
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BarcodeScannerLivestreamModule,
-    CommonModule,
-    FormsModule,
-    RouterModule.forRoot(AppRoutingModule.routes),
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		ConsoleBotoesExtracaoRelatoriosComponent
+	],
+	imports: [
+		ButtonModule,
+		BarcodeScannerLivestreamModule,
+		CommonModule,
+		FormsModule,
+		RouterModule.forRoot(AppRoutingModule.routes),
+		BrowserModule,
+		AppRoutingModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

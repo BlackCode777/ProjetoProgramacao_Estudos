@@ -1,1 +1,107 @@
 <router-outlet></router-outlet>
+
+<!--crie um elemento centralizado na horizontal e centralizado na vertical-->
+<div style="display: flex; justify-content: center; align-items: center; background-color: rgb(6, 17, 14);">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div>
+      <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> -->
+      <div style="display:inline-block; justify-content: center; align-items: center">
+        <div>
+          <barcode-scanner-livestream
+            #barcodeScanner2
+            type="code_128"
+            (valueChanges)="onValueChanges($event)"
+            (started)="(onStarted)"
+          >
+          </barcode-scanner-livestream>
+        </div>
+        <div>
+          <p style="color: rgb(0, 125, 234)">{{ barcodeScanner2 }}</p>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <div [hidden]="!barcodeValue">
+        {{ barcodeValue }}
+      </div>
+      <!-- <div>
+        <button class="btn-large btn-primary">botao</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center">
+  <div>
+    <div class="box-title">Extração de Relatórios</div>
+    <a
+      ><!-- *ngIf="isAdm" routerLink="interacoes"-->
+      <button mat-raised-button color="primary">
+        <!-- (click)="extractReport($event)"-->
+        <span>Relatórios</span>
+      </button>
+    </a>
+  </div>
+</div>
+
+<!--
+      <div class="row-1-2" fxFlex="grow">
+      <div fxLayout="row">
+        <div>
+          <div class="box">
+            <div class="box-title">Iterações</div>
+            <div class="box-content">
+              <div class="box-item">
+                <a  *ngIf="isAdm" routerLink="interacoes">
+                  <button mat-raised-button color="primary"  (click)="menuInteracoes()">
+                    <span>Interações</span>
+                  </button>
+                </a>
+              </div>
+              <div class="box-item">
+                <a *ngIf="isAdm" routerLink="estatisticas">
+                  <button mat-raised-button color="primary">
+                    <span>Estatísticas</span>
+                  </button>
+                </a>
+              </div>
+
+              <div class="box-item">
+                <a *ngIf="isMember" routerLink="/estatisticas/eventos">
+                  <button mat-raised-button color="primary">
+                    <span>Eventos</span>
+                  </button>
+                </a>
+              </div>
+              <div class="box-item">
+                <a *ngIf="isAdm" routerLink="relatorios">
+                  <button mat-raised-button color="primary">
+                    <span>Relatório</span>
+                  </button>
+                </a>
+              </div>
+              <div class="box-item">
+                <a *ngIf="isAdm" routerLink="suporte">
+                  <button mat-raised-button color="primary">
+                    <span>Suporte</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+<!-- 
+      <div class="row-1-2" fxFlex="grow">
+          <div fxLayout="row">
+              <div>
+                  <div>
+                      <youtube-player videoId="dY7NRL3d0-o" [height]="473" [width]="800">
+                      </youtube-player>
+                  </div>
+              </div>
+          </div>
+      </div> 
+    -->

@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
-import QuaggaModule 
+import { BarcodeScannerLivestreamModule } from 'ngx-barcode-scanner';
 
 
 @NgModule({
@@ -15,7 +14,7 @@ import QuaggaModule
     AppComponent
   ],
   imports: [
-    // QuaggaModule,
+    BarcodeScannerLivestreamModule,
     CommonModule,
     FormsModule,
     RouterModule.forRoot(AppRoutingModule.routes),

@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: 'camera', component: AppComponent },
+  // { path: 'camera', component: AppComponent },
 ];
 
 @NgModule({

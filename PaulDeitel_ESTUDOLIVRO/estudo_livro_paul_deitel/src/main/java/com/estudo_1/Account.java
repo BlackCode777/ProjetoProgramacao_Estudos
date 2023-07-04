@@ -1,4 +1,4 @@
-package main.java.com.estudo_1;
+package com.estudo_1;
 
 public class Account {
 

@@ -1,0 +1,122 @@
+
+ Descobrir como declarar uma classe 
+e utilizá-la para criar um objeto. 
+
+1) - Ver como implementar comportamentos de uma classe como métodos.
+        
+
+2) - Aprender como implementar os atributos de uma classe como variáveis de instância.
+
+        - Variáveis de instância = armazenam dados para cada objeto (isto é, cada instância) da classe.
+                    - EXEMPLO:
+                        private String nome;
+
+3) - Verificar como chamar os métodos de um objeto para fazê-los realizarem suas tarefas.
+
+        - método setName = armazena um nome em um objeto Account 
+            -EXEMPLO método setName():
+                public void setName(String name){
+                    this.name = name;
+                }
+
+        - método getName = obtém um nome de um objeto Account.
+            -EXEMPLO método getName():
+                public void getName(){
+                    return this.name;
+                }
+
+4) - Detectar o que são variáveis locais de um método e como elas diferem de variáveis de instância.
+
+5) - Distinguir o que são tipos primitivos e tipos de referência. 
+
+6) - Analisar como usar um construtor para inicializar dados de um objeto.
+
+7) - Desvendar como representar e usar números contendo pontos decimais.
+
+
+[RELACIONAMENTO] - Customização da tela de home do sistema
+[EVENTOS-ESTATÍSTICAS] - Criação de programa para extração de eventos do barramento
+
+
+
+[Funcao_1]:
+public static JSONObject consultarOrigem2(String urlOrigem, String indice, boolean scroll, boolean autenticacao, boolean ordenacao, boolean nested, String consulta) throws Exception {
+
+		StringBuilder uri = new StringBuilder();
+		uri.append(urlOrigem);
+		uri.append(indice);
+		uri.append("/_search");
+		if (scroll) {
+			uri.append("?scroll=10m");
+		}
+
+		try {
+			restTemplate.getMessageConverters().add(0, new StringHttpMessageConverter(StandardCharsets.UTF_8));
+
+			HttpHeaders headers = new HttpHeaders();
+			headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
+			headers.setContentType(MediaType.APPLICATION_JSON);
+			if (autenticacao) {
+				// headers.setBasicAuth("814524", "Prodesp@735");
+				headers.setBasicAuth("elastic", "VK6pA8uS?f&");
+			}
+
+			HttpEntity<String> entity = null;
+			if (nested) {
+				entity = new HttpEntity<>(QueryUtils.getAllNested(), headers);
+			} else {
+				// String consulta =
+				// "{\"size\":1000,\"query\":{\"bool\":{\"must\":[{\"range\":{\"data\":{\"gte\":1681700400000}}}]}}}";
+				entity = new HttpEntity<>(consulta, headers);
+				// entity = new HttpEntity<>(QueryUtils.getAll(ordenacao), headers);
+				// entity = new HttpEntity<>(QueryUtils.getAllByDate(), headers);
+				// entity = new HttpEntity<>(QueryUtils.getAllCidadao(), headers);
+			}
+
+			ResponseEntity<String> response = restTemplate.exchange(uri.toString(), HttpMethod.POST, entity, String.class);
+
+			/* Tratamento da resposta: */
+			switch (response.getStatusCode()) {
+				case OK:
+					// System.out.println(response.getBody());
+					return new JSONObject(response.getBody());
+				case UNAUTHORIZED:
+					throw new Exception();
+				default:
+					throw new Exception();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new Exception();
+		}
+	}
+;
+[Funcao_2]:
+private static void mountMap(List<Orgao> orgaos, EstatisticasEventosDao estatisticas, String url,
+			SortedMap<String, List<Barramento>> barramentos, String m, Long inicio, Long fim) {
+		for (Orgao org : orgaos) {
+			for (Servico s : org.getServicos()) {
+
+				JSONObject objetosI = estatisticas.searchData(url,
+						QueryBarramentosUtil.getQueryDetran(inicio, fim, s.getId()), true);
+
+				List<Barramento> brrs = ParseBarramentoUtil.parseDataDetran(objetosI, org, s, m);
+
+				if (barramentos.containsKey(m)) {
+
+					List<Barramento> auxs = barramentos.get(m);
+					auxs.addAll(brrs);
+
+					barramentos.put(m, auxs);
+
+				} else {
+					barramentos.put(m, brrs);
+				}
+			}
+		}
+	}
+
+
+Agora una a Funcao_1 e a Funcao_2, e mostre como seria feita esta fusão entre as duas Funções
+
+

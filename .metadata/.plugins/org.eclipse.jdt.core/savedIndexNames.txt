@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+E:\ProjetosProgramacao_2023\ProjetoProgramacao_27_05_2023_estudos_JavaAngularSpringTypeJavaScriptPythonIngles\ProjetoProgramacao_EstudosJAVA\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2230492417.index
+3920492869.index
+3318937832.index

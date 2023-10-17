@@ -8,5 +8,6 @@ public class AccountTest {
         Account account1 = new Account("Anderson Silva", 50.00);
         Account account2 = new Account("Chris Weidman", -7.53);
         System.out.printf("intial account balance: $%.2f%n", account1.getBalance());
+        System.out.printf("intial account balance: $%.2f%n", account2.getBalance());
     }
 }
